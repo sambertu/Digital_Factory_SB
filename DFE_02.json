@@ -474,7 +474,7 @@
         }
       ],
       "position": [-2000, 540, -1100],
-      "rotation": [0, 0, 1571],
+      "rotation": [0, 0, 1.571],
       "placementRelTo": "building",
       "properties": {
         "mass":  0,
@@ -513,7 +513,7 @@
         }
       ],
       "position": [-1100, 0, 900],
-      "rotation": [0, -1571, 0],
+      "rotation": [0, -1.571, 0],
       "placementRelTo": "building",
       "properties": {
         "mass":  0,
@@ -568,8 +568,8 @@
           "unit": 1
         }
       ],
-      "position": [-1100, 0, 1300],
-      "rotation": [0, -1571, 0],
+      "position": [-1100, 0, 1500],
+      "rotation": [0, -1.571, 0],
       "placementRelTo": "building",
       "properties": {
         "mass":  0,
