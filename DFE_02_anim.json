@@ -35,6 +35,21 @@
           } 
         } 
       ] 
+    },
+    {
+      "id":  "B3",
+       "actions":  [
+        {
+          "trigger":  {
+            "type":  "timestamp",
+             "data":  "1000"
+          },
+           "event":  {
+            "type": "sendEvent",
+            "data":  "B3startF"
+          } 
+        } 
+      ] 
     }
   ],
    "sequences":  [],
