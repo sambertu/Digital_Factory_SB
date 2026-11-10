@@ -421,6 +421,15 @@
 							},
 							{
 								"action": "moveTo",
+								"target": "PP.FloatingX",
+								"position": [
+									0,
+									0,
+									0
+								]
+							},
+							{
+								"action": "moveTo",
 								"target": "PP.Finger1",
 								"position": [
 									0,
@@ -451,7 +460,7 @@
 								"action": "moveTo",
 								"target": "PP.FloatingZ",
 								"position": [
-									80,
+									-120,
 									80,
 									0
 								]
@@ -463,6 +472,15 @@
 									-6,
 									-175,
 									-171
+								]
+							},
+							{
+								"action": "moveTo",
+								"target": "PP.FloatingX",
+								"position": [
+									0,
+									0,
+									0
 								]
 							},
 							{
@@ -496,7 +514,7 @@
 								"action": "moveTo",
 								"target": "PP.FloatingZ",
 								"position": [
-									0,
+									-120,
 									80,
 									-200
 								]
@@ -508,6 +526,15 @@
 									-6,
 									-40,
 									-171
+								]
+							},
+							{
+								"action": "moveTo",
+								"target": "PP.FloatingX",
+								"position": [
+									0,
+									0,
+									0
 								]
 							},
 							{
