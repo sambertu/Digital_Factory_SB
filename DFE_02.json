@@ -405,7 +405,7 @@
 								"action": "moveTo",
 								"target": "PP.FloatingZ",
 								"position": [
-									-120,
+									185,
 									80,
 									0
 								]
@@ -415,7 +415,7 @@
 								"target": "PP.FloatingY",
 								"position": [
 									-6,
-									185,
+									-40,
 									-171
 								]
 							},
