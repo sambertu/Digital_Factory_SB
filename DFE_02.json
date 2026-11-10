@@ -421,15 +421,6 @@
 							},
 							{
 								"action": "moveTo",
-								"target": "PP.FloatingX",
-								"position": [
-									0,
-									0,
-									0
-								]
-							},
-							{
-								"action": "moveTo",
 								"target": "PP.Finger1",
 								"position": [
 									0,
@@ -476,15 +467,6 @@
 							},
 							{
 								"action": "moveTo",
-								"target": "PP.FloatingX",
-								"position": [
-									0,
-									0,
-									0
-								]
-							},
-							{
-								"action": "moveTo",
 								"target": "PP.Finger1",
 								"position": [
 									0,
@@ -526,15 +508,6 @@
 									-6,
 									-40,
 									-171
-								]
-							},
-							{
-								"action": "moveTo",
-								"target": "PP.FloatingX",
-								"position": [
-									0,
-									0,
-									0
 								]
 							},
 							{
