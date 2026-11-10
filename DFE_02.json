@@ -496,7 +496,7 @@
 								"action": "moveTo",
 								"target": "PP.FloatingZ",
 								"position": [
-									80,
+									0,
 									80,
 									-200
 								]
