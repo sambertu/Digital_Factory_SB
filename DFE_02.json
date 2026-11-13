@@ -43,7 +43,12 @@
 		"PP_2.FloatingY_2",
 		"PP_3.FloatingX_3",
 		"PP_3.FloatingZ_3",
-		"PP_3.FloatingY_3"
+		"PP_3.FloatingY_3",
+		"SensorBarrier_1",
+		"SensorBarrier_2",
+		"SensorBarrier_3",
+		"SensorBarrier_4",
+		"SensorBarrier_5"
 	],
 	"assets": [
 		{
@@ -1510,6 +1515,221 @@
 				1.000000000000081,
 				1.0000000610351563
 			]
+		},
+		{
+			"id": "SensorBarrier_1",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
+			"representations": [
+				{
+					"file": "Sensor.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				1000,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "stSensor1",
+				"initial": "Idle",
+				"states": {
+					"Idle": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": "Detecting"
+						}
+					},
+					"Detecting": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
+						},
+						"on": {
+							"OBJECT_REMOVED": "Idle"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "SensorBarrier_2",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
+			"representations": [
+				{
+					"file": "Sensor.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				20,
+				1000,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "stSensor2",
+				"initial": "Idle",
+				"states": {
+					"Idle": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": "Detecting"
+						}
+					},
+					"Detecting": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
+						},
+						"on": {
+							"OBJECT_REMOVED": "Idle"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "SensorBarrier_3",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
+			"representations": [
+				{
+					"file": "Sensor.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				40,
+				1000,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "stSensor3",
+				"initial": "Idle",
+				"states": {
+					"Idle": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": "Detecting"
+						}
+					},
+					"Detecting": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
+						},
+						"on": {
+							"OBJECT_REMOVED": "Idle"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "SensorBarrier_4",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
+			"representations": [
+				{
+					"file": "Sensor.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				60,
+				1000,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "stSensor4",
+				"initial": "Idle",
+				"states": {
+					"Idle": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": "Detecting"
+						}
+					},
+					"Detecting": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
+						},
+						"on": {
+							"OBJECT_REMOVED": "Idle"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "SensorBarrier_5",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
+			"representations": [
+				{
+					"file": "Sensor.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				80,
+				1000,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "stSensor5",
+				"initial": "Idle",
+				"states": {
+					"Idle": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": "Detecting"
+						}
+					},
+					"Detecting": {
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
+						},
+						"on": {
+							"OBJECT_REMOVED": "Idle"
+						}
+					}
+				}
+			}
 		},
 		{
 			"id": "ground",
