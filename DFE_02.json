@@ -48,7 +48,12 @@
 		"SensorBarrier_2",
 		"SensorBarrier_3",
 		"SensorBarrier_4",
-		"SensorBarrier_5"
+		"SensorBarrier_5",
+		"Receiver_1",
+		"Receiver_2",
+		"Receiver_3",
+		"Receiver_4",
+		"Receiver_5"
 	],
 	"assets": [
 		{
@@ -1730,6 +1735,116 @@
 					}
 				}
 			}
+		},
+		{
+			"id": "Receiver_1",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
+			"representations": [
+				{
+					"file": "Sensor2.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				-19.8,
+				1.2
+			],
+			"rotation": [
+				3.14159265358979,
+				0,
+				0
+			],
+			"placementRelTo": "SensorBarrier_1",
+			"parentObject": "SensorBarrier_1"
+		},
+		{
+			"id": "Receiver_2",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
+			"representations": [
+				{
+					"file": "Sensor2.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				-19.8,
+				1.2
+			],
+			"rotation": [
+				3.14159265358979,
+				0,
+				0
+			],
+			"placementRelTo": "SensorBarrier_2",
+			"parentObject": "SensorBarrier_2"
+		},
+		{
+			"id": "Receiver_3",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
+			"representations": [
+				{
+					"file": "Sensor2.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				-19.8,
+				1.2
+			],
+			"rotation": [
+				3.14159265358979,
+				0,
+				0
+			],
+			"placementRelTo": "SensorBarrier_3",
+			"parentObject": "SensorBarrier_3"
+		},
+		{
+			"id": "Receiver_4",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
+			"representations": [
+				{
+					"file": "Sensor2.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				-19.8,
+				1.2
+			],
+			"rotation": [
+				3.14159265358979,
+				0,
+				0
+			],
+			"placementRelTo": "SensorBarrier_4",
+			"parentObject": "SensorBarrier_4"
+		},
+		{
+			"id": "Receiver_5",
+			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
+			"representations": [
+				{
+					"file": "Sensor2.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				0,
+				-19.8,
+				1.2
+			],
+			"rotation": [
+				3.14159265358979,
+				0,
+				0
+			],
+			"placementRelTo": "SensorBarrier_5",
+			"parentObject": "SensorBarrier_5"
 		},
 		{
 			"id": "ground",
