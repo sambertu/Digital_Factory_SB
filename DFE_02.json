@@ -1769,12 +1769,12 @@
 			],
 			"position": [
 				0,
-				-19.8,
-				20
+				220,
+				0
 			],
 			"rotation": [
-				3.14159265358979,
 				0,
+				3.14159265358979,
 				0
 			],
 			"placementRelTo": "SensorBarrier_2",
@@ -1791,12 +1791,12 @@
 			],
 			"position": [
 				0,
-				-19.8,
-				20
+				220,
+				0
 			],
 			"rotation": [
-				3.14159265358979,
 				0,
+				3.14159265358979,
 				0
 			],
 			"placementRelTo": "SensorBarrier_3",
@@ -1813,12 +1813,12 @@
 			],
 			"position": [
 				0,
-				-19.8,
-				20
+				220,
+				0
 			],
 			"rotation": [
-				3.14159265358979,
 				0,
+				3.14159265358979,
 				0
 			],
 			"placementRelTo": "SensorBarrier_4",
@@ -1835,12 +1835,12 @@
 			],
 			"position": [
 				0,
-				-19.8,
-				20
+				220,
+				0
 			],
 			"rotation": [
-				3.14159265358979,
 				0,
+				3.14159265358979,
 				0
 			],
 			"placementRelTo": "SensorBarrier_5",
