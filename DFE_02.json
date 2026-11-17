@@ -1559,7 +1559,18 @@
 							{
 								"type": "ActionSendEvent",
 								"target": "https://w3id.org/ontoeng/test_SB/#goPick",
-								"to": "PP_SC"
+								"to": "PP_SC",
+								"event": {
+									"type": "goPick"
+								},
+								"delay": 1000
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1stop"
+								},
+								"to": "B1_SC"
 							}
 						],
 						"type": "atomic"
@@ -1576,6 +1587,15 @@
 								}
 							]
 						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1startF"
+								},
+								"to": "B1_SC"
+							}
+						],
 						"type": "atomic"
 					},
 					"Starting_all": {
