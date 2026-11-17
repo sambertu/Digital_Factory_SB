@@ -1558,10 +1558,10 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"to": "PP_SC",
 								"event": {
 									"type": "goPick"
 								},
+								"to": "PP_SC",
 								"delay": 1000
 							},
 							{
@@ -1569,7 +1569,8 @@
 								"event": {
 									"type": "B1stop"
 								},
-								"to": "B1_SC"
+								"to": "B1_SC",
+								"delay": "500"
 							}
 						],
 						"type": "atomic"
