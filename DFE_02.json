@@ -1939,9 +1939,12 @@
 						},
 						"entry": [
 							{
-								"type": "sendEvent",
+								"type": "ActionSendEvent",
 								"target": "https://w3id.org/ontoeng/test_SB/#start_all",
-								"to": "stSensor1"
+								"to": "stSensor1",
+								"event": {
+									"type": "start_all"
+								}
 							}
 						],
 						"after": {
