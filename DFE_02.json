@@ -1558,7 +1558,8 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": "https://w3id.org/ontoeng/test_SB/#goPick"
+								"target": "https://w3id.org/ontoeng/test_SB/#goPick",
+								"to": "PP_SC"
 							}
 						],
 						"type": "atomic"
@@ -1939,7 +1940,8 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": "https://w3id.org/ontoeng/test_SB/#start_all"
+								"target": "https://w3id.org/ontoeng/test_SB/#start_all",
+								"to": "stSensor1"
 							}
 						],
 						"after": {
