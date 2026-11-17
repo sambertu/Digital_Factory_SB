@@ -53,7 +53,10 @@
 		"PP_2.FloatingY_2",
 		"PP_3.FloatingX_3",
 		"PP_3.FloatingZ_3",
-		"PP_3.FloatingY_3"
+		"PP_3.FloatingY_3",
+		"CommandBox",
+		"CommandBox.GreenButton",
+		"CommandBox.RedButton"
 	],
 	"assets": [
 		{
@@ -1845,6 +1848,49 @@
 			],
 			"placementRelTo": "SensorBarrier_5",
 			"parentObject": "SensorBarrier_5"
+		},
+		{
+			"id": "CommandBox",
+			"type": "https://w3id.org/ontoeng/factory#Artifact",
+			"representations": [
+				{
+					"file": "CommandBox.glb",
+					"unit": 1
+				}
+			],
+			"position": [
+				87.48,
+				79.13,
+				368.45
+			],
+			"rotation": [
+				0,
+				0,
+				-1.5707963267949
+			],
+			"placementRelTo": "building"
+		},
+		{
+			"id": "CommandBox.GreenButton",
+			"type": "https://w3id.org/ontoeng/factory#Artifact",
+			"representations": [
+				{
+					"file": "CommandBox.glb#GreenButton",
+					"unit": 1
+				}
+			],
+			"parentObject": "CommandBox"
+		},
+		{
+			"id": "CommandBox.RedButton",
+			"type": "https://w3id.org/ontoeng/factory#Artifact",
+			"representations": [
+				{
+					"file": "CommandBox.glb#RedButton",
+					"unit": 1
+				}
+			],
+			"parentObject": "CommandBox"
 		},
 		{
 			"id": "ground",
