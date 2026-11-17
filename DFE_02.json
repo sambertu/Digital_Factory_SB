@@ -1541,25 +1541,58 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor1",
-				"initial": "Detecting",
+				"context": {},
 				"states": {
-					"Idle": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
-						},
-						"on": {
-							"OBJECT_DETECTED": "Detecting"
-						}
-					},
 					"Detecting": {
+						"id": "Detecting",
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": "Idle"
-						}
+							"OBJECT_REMOVED": [
+								{
+									"target": "#Idle"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"target": "https://w3id.org/ontoeng/test_SB/#goPick"
+							}
+						],
+						"type": "atomic"
+					},
+					"Idle": {
+						"id": "Idle",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED": [
+								{
+									"target": "#Detecting"
+								}
+							]
+						},
+						"type": "atomic"
+					},
+					"Starting_all": {
+						"id": "Starting_all",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"on": {
+							"start_all": [
+								{
+									"target": "#Detecting"
+								}
+							]
+						},
+						"type": "atomic"
 					}
-				}
+				},
+				"initial": "Starting_all"
 			},
 			"scale": [
 				0.9999998825536512,
@@ -1859,9 +1892,9 @@
 				}
 			],
 			"position": [
-				0,
-				0,
-				0
+				-2000,
+				600,
+				-1100
 			],
 			"rotation": [
 				0,
@@ -1879,7 +1912,44 @@
 					"unit": 1
 				}
 			],
-			"parentObject": "CommandBox"
+			"parentObject": "CommandBox",
+			"statechart":{
+				"id": "CommandBox_GreenButton_SC",
+				"context": {},
+				"states": {
+					"CommandBox_GreenButton_idle": {
+					"id": "CommandBox_GreenButton_idle",
+					"meta": {
+						"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+					},
+					"on": {
+						"press_button": [
+							{
+								"target": "#CommandBox_GreenButton_pressed"
+							}
+						]
+					},
+					"type": "atomic"
+					},
+					"CommandBox_GreenButton_pressed": {
+						"id": "CommandBox_GreenButton_pressed",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"target": "https://w3id.org/ontoeng/test_SB/#start_all"
+							}
+						],
+						"always": {
+							"target": "#CommandBox_GreenButton_idle"
+						},
+						"type": "atomic"
+					}
+				},
+				"initial": "CommandBox_GreenButton_idle"
+			}
 		},
 		{
 			"id": "CommandBox.RedButton",
