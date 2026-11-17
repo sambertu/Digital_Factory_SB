@@ -1558,7 +1558,6 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": "https://w3id.org/ontoeng/test_SB/#goPick",
 								"to": "PP_SC",
 								"event": {
 									"type": "goPick"
@@ -1960,7 +1959,6 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": "https://w3id.org/ontoeng/test_SB/#start_all",
 								"to": "stSensor1",
 								"event": {
 									"type": "start_all"
