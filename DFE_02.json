@@ -1538,7 +1538,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor1",
-				"initial": "Idle",
+				"initial": "Detecting",
 				"states": {
 					"Idle": {
 						"meta": {
