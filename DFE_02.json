@@ -1939,7 +1939,7 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": null
+								"target": "https://w3id.org/ontoeng/test_SB/#start_all"
 							}
 						],
 						"after": {
