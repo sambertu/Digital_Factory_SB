@@ -430,12 +430,7 @@
 							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
 						},
 						"on": {
-							"goPlace": [
-								{
-									"target": "#place"
-								}
-							],
-							"goRest": [
+							"go_rest": [
 								{
 									"target": "#rest"
 								}
@@ -481,19 +476,17 @@
 								"delay": 1500
 							}
 						],
+						"after": {
+							"5000": {
+								"target": "#place"
+							}
+						},
 						"type": "atomic"
 					},
 					"place": {
 						"id": "place",
 						"meta": {
 							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
-						},
-						"on": {
-							"goRest": [
-								{
-									"target": "#rest"
-								}
-							]
 						},
 						"entry": [
 							{
@@ -535,6 +528,11 @@
 								"delay": 1500
 							}
 						],
+						"after": {
+							"5000": {
+								"target": "#rest"
+							}
+						},
 						"type": "atomic"
 					},
 					"rest": {
