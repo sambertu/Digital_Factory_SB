@@ -1597,7 +1597,6 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"target": "https://w3id.org/ontoeng/test_SB/#goPick",
 								"to": "PP_SC",
 								"event": {
 									"type": "goPick"
