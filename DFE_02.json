@@ -1586,7 +1586,7 @@
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"Object_Removed": [
+							"OBJECT_REMOVED": [
 								{
 									"target": "#Wait_PP"
 								}
