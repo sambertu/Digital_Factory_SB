@@ -443,7 +443,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
+								"target": "PP.FloatingZ",
 								"position": [
 									-12,
 									8,
@@ -452,7 +452,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
+								"target": "PP.FloatingY",
 								"position": [
 									-0.6000000000000001,
 									-17.5,
@@ -461,7 +461,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
+								"target": "PP.Finger1",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -471,7 +471,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
+								"target": "PP.Finger2",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -497,7 +497,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
+								"target": "PP.FloatingZ",
 								"position": [
 									-12,
 									8,
@@ -506,7 +506,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
+								"target": "PP.FloatingY",
 								"position": [
 									-0.6000000000000001,
 									-4,
@@ -515,7 +515,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
+								"target": "PP.Finger1",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -525,7 +525,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
+								"target": "PP.Finger2",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -551,7 +551,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
+								"target": "PP.FloatingZ",
 								"position": [
 									-12,
 									8,
@@ -560,7 +560,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
+								"target": "PP.FloatingY",
 								"position": [
 									-0.6000000000000001,
 									-4,
@@ -569,7 +569,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
+								"target": "PP.Finger1",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -579,7 +579,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
+								"target": "PP.Finger2",
 								"position": [
 									0,
 									-3.8000000000000003,
@@ -1597,10 +1597,10 @@
 						"entry": [
 							{
 								"type": "ActionSendEvent",
-								"to": "PP_SC",
 								"event": {
 									"type": "goPick"
 								},
+								"to": "PP_SC",
 								"delay": 1000
 							},
 							{
