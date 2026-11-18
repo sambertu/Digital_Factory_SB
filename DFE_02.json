@@ -421,145 +421,184 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "PP_SC",
-				"initial": "rest",
+				"context": {},
 				"states": {
-					"rest": {
-						"on": {
-							"goPick": "pick"
-						},
-						"entry": [
-							{
-								"action": "moveTo",
-								"target": "PP.FloatingZ",
-								"position": [
-									-120,
-									80,
-									0
-								]
-							},
-							{
-								"action": "moveTo",
-								"target": "PP.FloatingY",
-								"position": [
-									-6,
-									-40,
-									-171
-								]
-							},
-							{
-								"action": "moveTo",
-								"target": "PP.Finger1",
-								"position": [
-									0,
-									-38,
-									38
-								],
-								"delay": 1000
-							},
-							{
-								"action": "moveTo",
-								"target": "PP.Finger2",
-								"position": [
-									0,
-									-38,
-									-38
-								],
-								"delay": 1000
-							}
-						]
-					},
 					"pick": {
+						"id": "pick",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
-							"goPlace": "place",
-							"goRest": "rest"
+							"goPlace": [
+								{
+									"target": "#place"
+								}
+							],
+							"goRest": [
+								{
+									"target": "#rest"
+								}
+							]
 						},
 						"entry": [
 							{
-								"action": "moveTo",
-								"target": "PP.FloatingZ",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
 								"position": [
-									-120,
-									80,
+									-12,
+									8,
 									0
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.FloatingY",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
 								"position": [
-									-6,
-									-175,
-									-171
+									-0.6000000000000001,
+									-17.5,
+									-17.1
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.Finger1",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
 								"position": [
 									0,
-									-38,
-									3
+									-3.8000000000000003,
+									0.30000000000000004
 								],
 								"delay": 1500
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.Finger2",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
 								"position": [
 									0,
-									-38,
-									-3
+									-3.8000000000000003,
+									-0.30000000000000004
 								],
 								"delay": 1500
 							}
-						]
+						],
+						"type": "atomic"
 					},
 					"place": {
+						"id": "place",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
-							"goRest": "rest"
+							"goRest": [
+								{
+									"target": "#rest"
+								}
+							]
 						},
 						"entry": [
 							{
-								"action": "moveTo",
-								"target": "PP.FloatingZ",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
 								"position": [
-									-120,
-									80,
-									-200
+									-12,
+									8,
+									-20
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.FloatingY",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
 								"position": [
-									-6,
-									-40,
-									-171
+									-0.6000000000000001,
+									-4,
+									-17.1
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.Finger1",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
 								"position": [
 									0,
-									-38,
-									38
+									-3.8000000000000003,
+									3.8000000000000003
 								],
 								"delay": 1500
 							},
 							{
-								"action": "moveTo",
-								"target": "PP.Finger2",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
 								"position": [
 									0,
-									-38,
-									-38
+									-3.8000000000000003,
+									-3.8000000000000003
 								],
 								"delay": 1500
 							}
-						]
+						],
+						"type": "atomic"
+					},
+					"rest": {
+						"id": "rest",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
+						"on": {
+							"goPick": [
+								{
+									"target": "#pick"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingZ",
+								"position": [
+									-12,
+									8,
+									0
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.FloatingY",
+								"position": [
+									-0.6000000000000001,
+									-4,
+									-17.1
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger1",
+								"position": [
+									0,
+									-3.8000000000000003,
+									3.8000000000000003
+								],
+								"delay": 1000
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP.Finger2",
+								"position": [
+									0,
+									-3.8000000000000003,
+									-3.8000000000000003
+								],
+								"delay": 1000
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "PP_In_Idle"
+								},
+								"to": "stSensor1"
+							}
+						],
+						"type": "atomic"
 					}
-				}
+				},
+				"initial": "rest"
 			},
 			"scale": [
 				1.0000000610351563,
@@ -1549,19 +1588,20 @@
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": [
+							"Object_Removed": [
 								{
-									"target": "#Idle"
+									"target": "#Wait_PP"
 								}
 							]
 						},
 						"entry": [
 							{
 								"type": "ActionSendEvent",
+								"target": "https://w3id.org/ontoeng/test_SB/#goPick",
+								"to": "PP_SC",
 								"event": {
 									"type": "goPick"
 								},
-								"to": "PP_SC",
 								"delay": 1000
 							},
 							{
@@ -1569,8 +1609,7 @@
 								"event": {
 									"type": "B1stop"
 								},
-								"to": "B1_SC",
-								"delay": "500"
+								"to": "B1_SC"
 							}
 						],
 						"type": "atomic"
@@ -1607,6 +1646,20 @@
 							"start_all": [
 								{
 									"target": "#Detecting"
+								}
+							]
+						},
+						"type": "atomic"
+					},
+					"Wait_PP": {
+						"id": "Wait_PP",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"on": {
+							"PP_In_Idle": [
+								{
+									"target": "#Idle"
 								}
 							]
 						},
