@@ -422,6 +422,7 @@
 			"statechart": {
 				"id": "PP_SC",
 				"context": {},
+				"initial": "rest",
 				"states": {
 					"pick": {
 						"id": "pick",
@@ -597,8 +598,7 @@
 						],
 						"type": "atomic"
 					}
-				},
-				"initial": "rest"
+				}
 			},
 			"scale": [
 				1.0000000610351563,
