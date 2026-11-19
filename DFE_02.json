@@ -1651,7 +1651,7 @@
 					"Wait_PP": {
 						"id": "Wait_PP",
 						"meta": {
-							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
 							"PP_In_Idle": [
