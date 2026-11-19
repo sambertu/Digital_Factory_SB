@@ -1736,25 +1736,63 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor3",
-				"initial": "Idle",
+				"context": {},
 				"states": {
-					"Idle": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
-						},
-						"on": {
-							"OBJECT_DETECTED": "Detecting"
-						}
-					},
-					"Detecting": {
+					"Detecting_3": {
+						"id": "Detecting_3",
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": "Idle"
-						}
+							"OBJECT_REMOVED_3": [
+								{
+									"target": "#Idle_3"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2stop"
+								},
+								"to": "B2_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "goPick_2"
+								},
+								"to": "PP_2_SC"
+							}
+						],
+						"type": "atomic"
+					},
+					"Idle_3": {
+						"id": "Idle_3",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED_3": [
+								{
+									"target": "#Detecting_3"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2startF"
+								},
+								"to": "B2_SC"
+							}
+						],
+						"type": "atomic"
 					}
-				}
+				},
+				"initial": "Idle_3"
 			}
 		},
 		{
@@ -2014,6 +2052,20 @@
 								"event": {
 									"type": "start_all"
 								}
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2startF"
+								},
+								"to": "B2_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3startF"
+								},
+								"to": "B3_SC"
 							}
 						],
 						"after": {
