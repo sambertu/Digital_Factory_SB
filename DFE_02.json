@@ -2111,12 +2111,7 @@
 		},
 		{
 			"id": "ground",
-			"type": "",
-			"scale": [
-				null,
-				null,
-				null
-			]
+			"type": ""
 		}
 	]
 }
