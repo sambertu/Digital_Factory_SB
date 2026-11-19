@@ -860,9 +860,6 @@
 						}
 					},
 					"place": {
-						"on": {
-							"goRest": "rest"
-						},
 						"entry": [
 							{
 								"action": "moveTo",
@@ -1119,7 +1116,6 @@
 					},
 					"pick": {
 						"on": {
-							"goPlace": "place",
 							"goRest": "rest"
 						},
 						"entry": [
@@ -1169,9 +1165,6 @@
 						}
 					},
 					"place": {
-						"on": {
-							"goRest": "rest"
-						},
 						"entry": [
 							{
 								"action": "moveTo",
