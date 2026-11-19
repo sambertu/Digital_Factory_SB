@@ -2046,18 +2046,18 @@
 				"context": {},
 				"states": {
 					"CommandBox_GreenButton_idle": {
-					"id": "CommandBox_GreenButton_idle",
-					"meta": {
-						"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
-					},
-					"on": {
-						"press_button": [
-							{
-								"target": "#CommandBox_GreenButton_pressed"
-							}
-						]
-					},
-					"type": "atomic"
+						"id": "CommandBox_GreenButton_idle",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"on": {
+							"press_button": [
+								{
+									"target": "#CommandBox_GreenButton_pressed"
+								}
+							]
+						},
+						"type": "atomic"
 					},
 					"CommandBox_GreenButton_pressed": {
 						"id": "CommandBox_GreenButton_pressed",
