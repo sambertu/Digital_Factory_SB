@@ -763,11 +763,11 @@
 			"statechart": {
 				"id": "PP_2_SC",
 				"context": {},
-				"initial": "rest",
+				"initial": "rest_2",
 				"states": {
-					"rest": {
+					"rest_2": {
 						"on": {
-							"goPick_2": "pick"
+							"goPick_2": "pick_2"
 						},
 						"entry": [
 							{
@@ -810,9 +810,9 @@
 							}
 						]
 					},
-					"pick": {
+					"pick_2": {
 						"on": {
-							"goRest_2": "rest"
+							"goRest_2": "rest_2"
 						},
 						"entry": [
 							{
@@ -860,7 +860,7 @@
 							}
 						}
 					},
-					"place": {
+					"place_2": {
 						"entry": [
 							{
 								"action": "moveTo",
@@ -1069,11 +1069,11 @@
 			"statechart": {
 				"id": "PP_3_SC",
 				"context": {},
-				"initial": "rest",
+				"initial": "rest_3",
 				"states": {
-					"rest": {
+					"rest_3": {
 						"on": {
-							"goPick_3": "pick"
+							"goPick_3": "pick_3"
 						},
 						"entry": [
 							{
@@ -1116,9 +1116,9 @@
 							}
 						]
 					},
-					"pick": {
+					"pick_3": {
 						"on": {
-							"goRest_3": "rest"
+							"goRest_3": "rest_3"
 						},
 						"entry": [
 							{
@@ -1166,7 +1166,7 @@
 							}
 						}
 					},
-					"place": {
+					"place_3": {
 						"entry": [
 							{
 								"action": "moveTo",
@@ -1710,22 +1710,22 @@
 			"statechart": {
 				"id": "stSensor2",
 				"context": {},
-				"initial": "Idle",
+				"initial": "Idle_2",
 				"states": {
-					"Idle": {
+					"Idle_2": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
-							"OBJECT_DETECTED": "Detecting"
+							"OBJECT_DETECTED_2": "Detecting_2"
 						}
 					},
-					"Detecting": {
+					"Detecting_2": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": "Idle"
+							"OBJECT_REMOVED_2": "Idle_2"
 						}
 					}
 				}
@@ -1835,22 +1835,22 @@
 			"statechart": {
 				"id": "stSensor4",
 				"context": {},
-				"initial": "Idle",
+				"initial": "Idle_4",
 				"states": {
-					"Idle": {
+					"Idle_4": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
-							"OBJECT_DETECTED": "Detecting"
+							"OBJECT_DETECTED_4": "Detecting_4"
 						}
 					},
-					"Detecting": {
+					"Detecting_4": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": "Idle"
+							"OBJECT_REMOVED_4": "Idle_4"
 						}
 					}
 				}
@@ -1879,22 +1879,22 @@
 			"statechart": {
 				"id": "stSensor5",
 				"context": {},
-				"initial": "Idle",
+				"initial": "Idle_5",
 				"states": {
-					"Idle": {
+					"Idle_5": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
-							"OBJECT_DETECTED": "Detecting"
+							"OBJECT_DETECTED_5": "Detecting_5"
 						}
 					},
-					"Detecting": {
+					"Detecting_5": {
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED": "Idle"
+							"OBJECT_REMOVED_5": "Idle_5"
 						}
 					}
 				}
