@@ -766,7 +766,7 @@
 				"states": {
 					"rest": {
 						"on": {
-							"goPick": "pick"
+							"goPick_2": "pick"
 						},
 						"entry": [
 							{
@@ -811,7 +811,7 @@
 					},
 					"pick": {
 						"on": {
-							"goRest": "rest"
+							"goRest_2": "rest"
 						},
 						"entry": [
 							{
@@ -1071,7 +1071,7 @@
 				"states": {
 					"rest": {
 						"on": {
-							"goPick": "pick"
+							"goPick_3": "pick"
 						},
 						"entry": [
 							{
@@ -1116,7 +1116,7 @@
 					},
 					"pick": {
 						"on": {
-							"goRest": "rest"
+							"goRest_3": "rest"
 						},
 						"entry": [
 							{
