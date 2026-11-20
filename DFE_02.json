@@ -766,6 +766,10 @@
 				"initial": "rest_2",
 				"states": {
 					"rest_2": {
+						"id": "rest_2",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
 							"goPick_2": "pick_2"
 						},
@@ -808,9 +812,14 @@
 								],
 								"delay": 1000
 							}
-						]
+						],
+						"type": "atomic"
 					},
 					"pick_2": {
+						"id": "pick_2",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
 							"goRest_2": "rest_2"
 						},
@@ -858,9 +867,14 @@
 							"3000":{
 								"target":"#place_2"
 							}
-						}
+						},
+						"type": "atomic"
 					},
 					"place_2": {
+						"id": "place_2",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"entry": [
 							{
 								"action": "moveTo",
@@ -905,7 +919,8 @@
 							"5000":{
 								"target":"#rest_2"
 							}
-						}
+						},
+						"type": "atomic"
 					}
 				}
 			},
@@ -1072,6 +1087,10 @@
 				"initial": "rest_3",
 				"states": {
 					"rest_3": {
+						"id": "rest_3",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
 							"goPick_3": "pick_3"
 						},
@@ -1114,9 +1133,14 @@
 								],
 								"delay": 1000
 							}
-						]
+						],
+						"type": "atomic"
 					},
 					"pick_3": {
+						"id": "pick_3",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"on": {
 							"goRest_3": "rest_3"
 						},
@@ -1164,9 +1188,14 @@
 							"3000":{
 								"target":"#place_3"
 							}
-						}
+						},
+						"type": "atomic"
 					},
 					"place_3": {
+						"id": "place_3",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
 						"entry": [
 							{
 								"action": "moveTo",
@@ -1211,7 +1240,8 @@
 							"5000":{
 								"target":"#rest_3"
 							}
-						}
+						},
+						"type": "atomic"
 					}
 				}
 			},
