@@ -1909,25 +1909,62 @@
 			"statechart": {
 				"id": "stSensor5",
 				"context": {},
-				"initial": "Idle_5",
 				"states": {
-					"Idle_5": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
-						},
-						"on": {
-							"OBJECT_DETECTED_5": "Detecting_5"
-						}
-					},
 					"Detecting_5": {
+						"id": "Detecting_5",
 						"meta": {
 							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
 						},
 						"on": {
-							"OBJECT_REMOVED_5": "Idle_5"
-						}
+							"OBJECT_REMOVED_5": [
+								{
+									"target": "#Idle_5"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3stop"
+								},
+								"to": "B3_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "goPick_3"
+								},
+								"to": "PP_3_SC"
+							}
+						],
+						"type": "atomic"
+					},
+					"Idle_5": {
+						"id": "Idle_5",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
+						},
+						"on": {
+							"OBJECT_DETECTED_5": [
+								{
+									"target": "#Detecting_5"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3startF"
+								},
+								"to": "B3_SC"
+							}
+						],
+						"type": "atomic"
 					}
-				}
+				},
+				"initial": "Idle_5"
 			}
 		},
 		{
