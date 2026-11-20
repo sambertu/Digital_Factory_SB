@@ -762,6 +762,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "PP_2_SC",
+				"context": {},
 				"initial": "rest",
 				"states": {
 					"rest": {
@@ -855,7 +856,7 @@
 						],
 						"after":{
 							"3000":{
-								"target":"#place"
+								"target":"#place_2"
 							}
 						}
 					},
@@ -902,7 +903,7 @@
 						],
 						"after":{
 							"5000":{
-								"target":"#rest"
+								"target":"#rest_2"
 							}
 						}
 					}
@@ -1067,6 +1068,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "PP_3_SC",
+				"context": {},
 				"initial": "rest",
 				"states": {
 					"rest": {
@@ -1160,7 +1162,7 @@
 						],
 						"after":{
 							"3000":{
-								"target":"#place"
+								"target":"#place_3"
 							}
 						}
 					},
@@ -1207,7 +1209,7 @@
 						],
 						"after":{
 							"5000":{
-								"target":"#rest"
+								"target":"#rest_3"
 							}
 						}
 					}
@@ -1434,6 +1436,7 @@
 			},
 			"statechart": {
 				"id": "B2_SC",
+				"context": {},
 				"initial": "idle",
 				"states": {
 					"idle": {
@@ -1515,6 +1518,7 @@
 			},
 			"statechart": {
 				"id": "B3_SC",
+				"context": {},
 				"initial": "idle",
 				"states": {
 					"idle": {
@@ -1705,6 +1709,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor2",
+				"context": {},
 				"initial": "Idle",
 				"states": {
 					"Idle": {
@@ -1829,6 +1834,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor4",
+				"context": {},
 				"initial": "Idle",
 				"states": {
 					"Idle": {
@@ -1872,6 +1878,7 @@
 			"placementRelTo": "building",
 			"statechart": {
 				"id": "stSensor5",
+				"context": {},
 				"initial": "Idle",
 				"states": {
 					"Idle": {
