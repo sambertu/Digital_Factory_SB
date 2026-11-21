@@ -1805,7 +1805,7 @@
 									"type": "B2stop"
 								},
 								"to": "B2_SC",
-								"delay": 250
+								"delay": 300
 							},
 							{
 								"type": "ActionSendEvent",
