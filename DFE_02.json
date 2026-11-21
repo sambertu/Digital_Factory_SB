@@ -1804,14 +1804,16 @@
 								"event": {
 									"type": "B2stop"
 								},
-								"to": "B2_SC"
+								"to": "B2_SC",
+								"delay": 250
 							},
 							{
 								"type": "ActionSendEvent",
 								"event": {
 									"type": "goPick_2"
 								},
-								"to": "PP_2_SC"
+								"to": "PP_2_SC",
+								"delay": 1000
 							}
 						],
 						"type": "atomic"
@@ -1929,14 +1931,16 @@
 								"event": {
 									"type": "B3stop"
 								},
-								"to": "B3_SC"
+								"to": "B3_SC",
+								"delay": 250
 							},
 							{
 								"type": "ActionSendEvent",
 								"event": {
 									"type": "goPick_3"
 								},
-								"to": "PP_3_SC"
+								"to": "PP_3_SC",
+								"delay": 1000
 							}
 						],
 						"type": "atomic"
