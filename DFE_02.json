@@ -830,7 +830,7 @@
 								"position": [
 									-120,
 									80,
-									0
+									-10
 								]
 							},
 							{
@@ -1634,7 +1634,7 @@
 						"on": {
 							"OBJECT_REMOVED": [
 								{
-									"target": "#Wait_PP"
+									"target": "#Idle"
 								}
 							]
 						},
@@ -1664,21 +1664,12 @@
 							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
-							"OBJECT_DETECTED": [
+							"PP_In_Idle": [
 								{
-									"target": "#Detecting"
+									"target": "#Wait_PP"
 								}
 							]
 						},
-						"entry": [
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B1startF"
-								},
-								"to": "B1_SC"
-							}
-						],
 						"type": "atomic"
 					},
 					"Starting_all": {
@@ -1701,12 +1692,21 @@
 							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
 						},
 						"on": {
-							"PP_In_Idle": [
+							"OBJECT_DETECTED": [
 								{
-									"target": "#Idle"
+									"target": "#Detecting"
 								}
 							]
 						},
+						"entry":[
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1startF"
+								},
+								"to": "B1_SC"
+							}
+						],
 						"type": "atomic"
 					}
 				},
