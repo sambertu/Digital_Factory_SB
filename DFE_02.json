@@ -589,7 +589,7 @@
 							{
 								"type": "ActionSendEvent",
 								"event": {
-									"type": "PP_In_Idle"
+									"type": "PP_in_Idle"
 								},
 								"to": "stSensor1"
 							}
@@ -1666,7 +1666,7 @@
 						"on": {
 							"PP_In_Idle": [
 								{
-									"target": "#Wait_PP"
+									"target": "#Waiting_PP"
 								}
 							]
 						},
@@ -1686,10 +1686,10 @@
 						},
 						"type": "atomic"
 					},
-					"Wait_PP": {
-						"id": "Wait_PP",
+					"Waiting_PP": {
+						"id": "Waiting_PP",
 						"meta": {
-							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+							"type": "https://w3id.org/ontoeng/factory#SensorSimpleState"
 						},
 						"on": {
 							"OBJECT_DETECTED": [
