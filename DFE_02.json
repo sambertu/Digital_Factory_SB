@@ -9,14 +9,10 @@
 		"ground",
 		"building",
 		"SensorBarrier_1",
-		"SensorBarrier_2",
 		"SensorBarrier_3",
-		"SensorBarrier_4",
 		"SensorBarrier_5",
 		"Receiver_1",
-		"Receiver_2",
 		"Receiver_3",
-		"Receiver_4",
 		"Receiver_5",
 		"Box",
 		"Grid",
@@ -1719,50 +1715,6 @@
 			]
 		},
 		{
-			"id": "SensorBarrier_2",
-			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
-			"representations": [
-				{
-					"file": "Sensor.glb",
-					"unit": 1
-				}
-			],
-			"position": [
-				-200,
-				235,
-				995
-			],
-			"rotation": [
-				4.71238898038469,
-				0,
-				0
-			],
-			"placementRelTo": "building",
-			"statechart": {
-				"id": "stSensor2",
-				"context": {},
-				"initial": "Idle_2",
-				"states": {
-					"Idle_2": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
-						},
-						"on": {
-							"OBJECT_DETECTED_2": "Detecting_2"
-						}
-					},
-					"Detecting_2": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
-						},
-						"on": {
-							"OBJECT_REMOVED_2": "Idle_2"
-						}
-					}
-				}
-			}
-		},
-		{
 			"id": "SensorBarrier_3",
 			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
 			"representations": [
@@ -1843,50 +1795,6 @@
 					}
 				},
 				"initial": "Idle_3"
-			}
-		},
-		{
-			"id": "SensorBarrier_4",
-			"type": "https://w3id.org/ontoeng/factory#SensorBarrier",
-			"representations": [
-				{
-					"file": "Sensor.glb",
-					"unit": 1
-				}
-			],
-			"position": [
-				-2595,
-				235,
-				700
-			],
-			"rotation": [
-				4.71238898038469,
-				4.712563513309889,
-				0
-			],
-			"placementRelTo": "building",
-			"statechart": {
-				"id": "stSensor4",
-				"context": {},
-				"initial": "Idle_4",
-				"states": {
-					"Idle_4": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
-						},
-						"on": {
-							"OBJECT_DETECTED_4": "Detecting_4"
-						}
-					},
-					"Detecting_4": {
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorDetecting"
-						},
-						"on": {
-							"OBJECT_REMOVED_4": "Idle_4"
-						}
-					}
-				}
 			}
 		},
 		{
@@ -1995,28 +1903,6 @@
 			"parentObject": "SensorBarrier_1"
 		},
 		{
-			"id": "Receiver_2",
-			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
-			"representations": [
-				{
-					"file": "Sensor2.glb",
-					"unit": 1
-				}
-			],
-			"position": [
-				0,
-				220,
-				0
-			],
-			"rotation": [
-				0,
-				3.14159265358979,
-				0
-			],
-			"placementRelTo": "SensorBarrier_2",
-			"parentObject": "SensorBarrier_2"
-		},
-		{
 			"id": "Receiver_3",
 			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
 			"representations": [
@@ -2037,28 +1923,6 @@
 			],
 			"placementRelTo": "SensorBarrier_3",
 			"parentObject": "SensorBarrier_3"
-		},
-		{
-			"id": "Receiver_4",
-			"type": "https://w3id.org/ontoeng/factory#SensorBarrierReceiver",
-			"representations": [
-				{
-					"file": "Sensor2.glb",
-					"unit": 1
-				}
-			],
-			"position": [
-				0,
-				220,
-				0
-			],
-			"rotation": [
-				0,
-				3.14159265358979,
-				0
-			],
-			"placementRelTo": "SensorBarrier_4",
-			"parentObject": "SensorBarrier_4"
 		},
 		{
 			"id": "Receiver_5",
