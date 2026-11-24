@@ -1261,7 +1261,7 @@
 								"type": "ActionMoveTo",
 								"target": "PP_3.FloatingZ_3",
 								"position": [
-									-120,
+									-50,
 									80,
 									-200
 								]
@@ -1273,15 +1273,6 @@
 									-6,
 									-40,
 									-171
-								]
-							},
-							{
-								"type":"ActionMoveTo",
-								"target":"PP_3.FloatingX_3",
-								"position": [
-									-344,
-									369,
-									114
 								]
 							},
 							{
@@ -1341,15 +1332,6 @@
 									-6,
 									-40,
 									-171
-								]
-							},
-							{
-								"type":"ActionMoveTo",
-								"target":"PP_3.FloatingX_3",
-								"position": [
-									-244,
-									369,
-									114
 								]
 							},
 							{
@@ -1850,7 +1832,7 @@
 									"type": "B1stop"
 								},
 								"to": "B1_SC",
-								"delay": 250
+								"delay": 1000
 							}
 						],
 						"type": "atomic"
