@@ -104,7 +104,7 @@
 							"velocity": [
 								0,
 								0,
-								40
+								20
 							]
 						}
 					},
@@ -118,7 +118,7 @@
 							"velocity": [
 								0,
 								0,
-								-40
+								-20
 							]
 						}
 					}
@@ -1074,7 +1074,7 @@
 			"position": [
 				-2420,
 				0,
-				-1110
+				-1115
 			],
 			"placementRelTo": "building",
 			"statechart": {
@@ -1279,7 +1279,7 @@
 								"type":"ActionMoveTo",
 								"target":"PP_3.FloatingX_3",
 								"position": [
-									-40,
+									-100,
 									0,
 									0
 								]
@@ -1448,7 +1448,12 @@
 				}
 			],
 			"placementRelTo": "PP_3",
-			"parentObject": "PP_3"
+			"parentObject": "PP_3",
+			"position": [
+				-244,
+				369,
+				114
+			]
 		},
 		{
 			"id": "PP_3.FloatingZ_3",
@@ -2206,7 +2211,63 @@
 					"unit": 1
 				}
 			],
-			"parentObject": "CommandBox"
+			"parentObject": "CommandBox",
+			"statechart":{
+				"id": "CommandBox_RedButton_SC",
+				"context": {},
+				"states": {
+					"RedButton_Stop_all": {
+						"id": "RedButton_Stop_all",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1stop"
+								},
+								"to": "B1_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2stop"
+								},
+								"to": "B2_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3stop"
+								},
+								"to": "B3_SC"
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#RedButton_idle"
+							}
+						},
+						"type": "atomic"
+					},
+					"RedButton_idle": {
+						"id": "RedButton_idle",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"on": {
+							"Press_RedButton": [
+								{
+									"target": "#RedButton_Stop_all"
+								}
+							]
+						},
+						"type": "atomic"
+					}
+				},
+				"initial": "RedButton_idle"
+			}
 		},
 		{
 			"id": "ground",
