@@ -589,7 +589,7 @@
 							{
 								"type": "ActionSendEvent",
 								"event": {
-									"type": "PP_in_Idle"
+									"type": "PP_In_Idle"
 								},
 								"to": "stSensor1"
 							}
