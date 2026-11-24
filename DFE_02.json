@@ -1096,7 +1096,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1105,7 +1105,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-175,
@@ -1114,7 +1114,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
@@ -1124,7 +1124,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
@@ -1155,7 +1155,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1164,7 +1164,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-175,
@@ -1173,21 +1173,23 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
 									3
-								]
+								],
+								"delay": 1500
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
 									-3
-								]
+								],
+								"delay": 1500
 							}
 						],
 						"after": {
@@ -1205,7 +1207,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1214,7 +1216,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-40,
@@ -1223,7 +1225,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
@@ -1233,7 +1235,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
@@ -1257,7 +1259,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1266,7 +1268,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-40,
@@ -1275,7 +1277,7 @@
 							},
 							{
 								"type":"ActionMoveTo",
-								"target":"https://w3id.org/ontoeng/test_SB/#PP_3.FloatingX_3",
+								"target":"PP_3.FloatingX_3",
 								"position": [
 									-40,
 									0,
@@ -1284,21 +1286,23 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
 									38
-								]
+								],
+								"delay": 1500
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
 									-38
-								]
+								],
+								"delay": 1500
 							}
 						],
 						"after": {
@@ -1323,7 +1327,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1332,7 +1336,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-40,
@@ -1340,8 +1344,17 @@
 								]
 							},
 							{
+								"type":"ActionMoveTo",
+								"target":"PP_3.FloatingX_3",
+								"position": [
+									0,
+									0,
+									0
+								]
+							},
+							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
@@ -1351,7 +1364,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
@@ -1377,7 +1390,7 @@
 						"entry": [
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"target": "PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1386,7 +1399,7 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"target": "PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-40,
@@ -1395,21 +1408,23 @@
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"target": "PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
 									38
-								]
+								],
+								"delay": 1000
 							},
 							{
 								"type": "ActionMoveTo",
-								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"target": "PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
 									-38
-								]
+								],
+								"delay": 1000
 							}
 						],
 						"type": "atomic"
@@ -1551,7 +1566,7 @@
 			"position": [
 				0,
 				-37.99992427229881,
-				36
+				-36
 			],
 			"rotation": [
 				0,
