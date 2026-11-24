@@ -104,7 +104,7 @@
 							"velocity": [
 								0,
 								0,
-								80
+								60
 							]
 						}
 					},
@@ -118,7 +118,7 @@
 							"velocity": [
 								0,
 								0,
-								-80
+								-60
 							]
 						}
 					}
@@ -1080,70 +1080,23 @@
 			"statechart": {
 				"id": "PP_3_SC",
 				"context": {},
-				"initial": "rest_3",
 				"states": {
-					"rest_3": {
-						"id": "rest_3",
-						"meta": {
-							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
-						},
-						"on": {
-							"goPick_3": "pick_3"
-						},
-						"entry": [
-							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingZ_3",
-								"position": [
-									-120,
-									80,
-									0
-								]
-							},
-							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingY_3",
-								"position": [
-									-6,
-									-40,
-									-171
-								]
-							},
-							{
-								"action": "moveTo",
-								"target": "PP_3.Finger1_3",
-								"position": [
-									0,
-									-38,
-									38
-								],
-								"delay": 1000
-							},
-							{
-								"action": "moveTo",
-								"target": "PP_3.Finger2_3",
-								"position": [
-									0,
-									-38,
-									-38
-								],
-								"delay": 1000
-							}
-						],
-						"type": "atomic"
-					},
 					"pick_3": {
 						"id": "pick_3",
 						"meta": {
 							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
 						},
 						"on": {
-							"goRest_3": "rest_3"
+							"goRest_3": [
+								{
+									"target": "#rest_3"
+								}
+							]
 						},
 						"entry": [
 							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingZ_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1151,8 +1104,8 @@
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingY_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-175,
@@ -1160,8 +1113,8 @@
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.Finger1_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
@@ -1170,8 +1123,8 @@
 								"delay": 1500
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.Finger2_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
@@ -1180,9 +1133,66 @@
 								"delay": 1500
 							}
 						],
-						"after":{
-							"3000":{
-								"target":"#place_3"
+						"after": {
+							"3000": {
+								"target": "#place_3"
+							}
+						},
+						"type": "atomic"
+					},
+					"pick_3_2nd": {
+						"id": "pick_3_2nd",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"on": {
+							"goRest_3": [
+								{
+									"target": "#rest_3_2nd"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"position": [
+									-120,
+									80,
+									0
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"position": [
+									-6,
+									-175,
+									-171
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"position": [
+									0,
+									-38,
+									3
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"position": [
+									0,
+									-38,
+									-3
+								]
+							}
+						],
+						"after": {
+							"3000": {
+								"target": "#place_3_2nd"
 							}
 						},
 						"type": "atomic"
@@ -1194,8 +1204,8 @@
 						},
 						"entry": [
 							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingZ_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
 								"position": [
 									-120,
 									80,
@@ -1203,8 +1213,8 @@
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.FloatingY_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
 								"position": [
 									-6,
 									-40,
@@ -1212,8 +1222,8 @@
 								]
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.Finger1_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
 								"position": [
 									0,
 									-38,
@@ -1222,8 +1232,8 @@
 								"delay": 1500
 							},
 							{
-								"action": "moveTo",
-								"target": "PP_3.Finger2_3",
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
 								"position": [
 									0,
 									-38,
@@ -1232,14 +1242,171 @@
 								"delay": 1500
 							}
 						],
-						"after":{
-							"5000":{
-								"target":"#rest_3"
+						"after": {
+							"5000": {
+								"target": "#rest_3_2nd"
 							}
 						},
 						"type": "atomic"
+					},
+					"place_3_2nd": {
+						"id": "place_3_2nd",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"entry": [
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"position": [
+									-120,
+									80,
+									-200
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"position": [
+									-6,
+									-40,
+									-171
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"position": [
+									0,
+									-38,
+									38
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"position": [
+									0,
+									-38,
+									-38
+								]
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#rest_3"
+							}
+						},
+						"type": "atomic"
+					},
+					"rest_3": {
+						"id": "rest_3",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"
+						},
+						"on": {
+							"goPick_3": [
+								{
+									"target": "#pick_3"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"position": [
+									-120,
+									80,
+									0
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"position": [
+									-6,
+									-40,
+									-171
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"position": [
+									0,
+									-38,
+									38
+								],
+								"delay": 1000
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"position": [
+									0,
+									-38,
+									-38
+								],
+								"delay": 1000
+							}
+						],
+						"type": "atomic"
+					},
+					"rest_3_2nd": {
+						"id": "rest_3_2nd",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"on": {
+							"goPick_3": [
+								{
+									"target": "#pick_3_2nd"
+								}
+							]
+						},
+						"entry": [
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingZ_3",
+								"position": [
+									-120,
+									80,
+									0
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.FloatingY_3",
+								"position": [
+									-6,
+									-40,
+									-171
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger1_3",
+								"position": [
+									0,
+									-38,
+									38
+								]
+							},
+							{
+								"type": "ActionMoveTo",
+								"target": "https://w3id.org/ontoeng/test_SB/#PP_3.Finger2_3",
+								"position": [
+									0,
+									-38,
+									-38
+								]
+							}
+						],
+						"type": "atomic"
 					}
-				}
+				},
+				"initial": "rest_3"
 			},
 			"scale": [
 				1.0000000610351563,
@@ -1660,12 +1827,21 @@
 							"type": "https://w3id.org/ontoeng/factory#SensorIdle"
 						},
 						"on": {
-							"PP_In_Idle": [
+							"OBJECT_DETECTED": [
 								{
-									"target": "#Waiting_PP"
+									"target": "#Detecting"
 								}
 							]
 						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1startF"
+								},
+								"to": "B1_SC"
+							}
+						],
 						"type": "atomic"
 					},
 					"Starting_all": {
@@ -1680,29 +1856,6 @@
 								}
 							]
 						},
-						"type": "atomic"
-					},
-					"Waiting_PP": {
-						"id": "Waiting_PP",
-						"meta": {
-							"type": "https://w3id.org/ontoeng/factory#SensorSimpleState"
-						},
-						"on": {
-							"OBJECT_DETECTED": [
-								{
-									"target": "#Detecting"
-								}
-							]
-						},
-						"entry":[
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B1startF"
-								},
-								"to": "B1_SC"
-							}
-						],
 						"type": "atomic"
 					}
 				},
