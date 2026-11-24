@@ -581,13 +581,6 @@
 									-38
 								],
 								"delay": 1000
-							},
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "PP_In_Idle"
-								},
-								"to": "stSensor1"
 							}
 						],
 						"type": "atomic"
@@ -1211,7 +1204,7 @@
 								"position": [
 									-120,
 									80,
-									-200
+									-100
 								]
 							},
 							{
@@ -1263,7 +1256,7 @@
 								"position": [
 									-120,
 									80,
-									-300
+									-200
 								]
 							},
 							{
