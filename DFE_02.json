@@ -1279,9 +1279,9 @@
 								"type":"ActionMoveTo",
 								"target":"PP_3.FloatingX_3",
 								"position": [
-									-100,
-									0,
-									0
+									-344,
+									369,
+									114
 								]
 							},
 							{
@@ -1347,9 +1347,9 @@
 								"type":"ActionMoveTo",
 								"target":"PP_3.FloatingX_3",
 								"position": [
-									0,
-									0,
-									0
+									-244,
+									369,
+									114
 								]
 							},
 							{
@@ -2163,15 +2163,55 @@
 				"id": "CommandBox_GreenButton_SC",
 				"context": {},
 				"states": {
+					"CommandBox_GreenButton_StartAgain": {
+						"id": "CommandBox_GreenButton_StartAgain",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1startF"
+								},
+								"to": "B1_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2startF"
+								},
+								"to": "B2_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3startF"
+								},
+								"to": "B3_SC"
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#CommandBox_GreenButton_idle"
+							}
+						},
+						"type": "atomic"
+					},
 					"CommandBox_GreenButton_idle": {
 						"id": "CommandBox_GreenButton_idle",
 						"meta": {
 							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
 						},
 						"on": {
-							"press_button": [
+							"Start_All": [
 								{
 									"target": "#CommandBox_GreenButton_pressed"
+								}
+							],
+							"Restart_Conveyors": [
+								{
+									"target": "#CommandBox_GreenButton_StartAgain"
 								}
 							]
 						},
