@@ -826,7 +826,7 @@
 								"position": [
 									-120,
 									80,
-									-10
+									-5
 								]
 							},
 							{
@@ -1271,6 +1271,15 @@
 									-6,
 									-40,
 									-171
+								]
+							},
+							{
+								"type":"ActionMoveTo",
+								"target":"https://w3id.org/ontoeng/test_SB/#PP_3.FloatingX_3",
+								"position": [
+									-40,
+									0,
+									0
 								]
 							},
 							{
@@ -2044,7 +2053,7 @@
 			],
 			"position": [
 				0,
-				220,
+				210,
 				0
 			],
 			"rotation": [
