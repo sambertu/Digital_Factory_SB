@@ -1067,7 +1067,7 @@
 			"type": "https://w3id.org/ontoeng/factory#Robot",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb",
+					"file": "Pick_and_Place_Robot_Longer.glb",
 					"unit": 1
 				}
 			],
@@ -1425,7 +1425,7 @@
 			"type": "https://w3id.org/ontoeng/factory#RobotArm",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Floating_X",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Floating_X",
 					"unit": 1
 				}
 			],
@@ -1447,7 +1447,7 @@
 			"type": "https://w3id.org/ontoeng/factory#RobotArm",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Floating_Z",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Floating_Z",
 					"unit": 1
 				}
 			],
@@ -1469,7 +1469,7 @@
 			"type": "https://w3id.org/ontoeng/factory#RobotArm",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Floating_Y",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Floating_Y",
 					"unit": 1
 				}
 			],
@@ -1491,7 +1491,7 @@
 			"type": "https://w3id.org/ontoeng/factory#JawGripper",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Gripper",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Gripper",
 					"unit": 1
 				}
 			],
@@ -1503,7 +1503,7 @@
 			"type": "https://w3id.org/ontoeng/factory#JawFinger",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Finger1",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Finger1",
 					"unit": 1
 				}
 			],
@@ -1537,7 +1537,7 @@
 			"type": "https://w3id.org/ontoeng/factory#JawFinger",
 			"representations": [
 				{
-					"file": "Pick_and_Place_Robot.glb#PP_Finger2",
+					"file": "Pick_and_Place_Robot_Longer.glb#PP_Finger2",
 					"unit": 1
 				}
 			],
