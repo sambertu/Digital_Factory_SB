@@ -1448,8 +1448,8 @@
 				}
 			],
 			"position": [
-				-1420,
-				-1.9451967814276827e-11,
+				-1400,
+				0,
 				900
 			],
 			"rotation": [
@@ -2143,20 +2143,6 @@
 								"event": {
 									"type": "start_all"
 								}
-							},
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B2startF"
-								},
-								"to": "B2_SC"
-							},
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B3startF"
-								},
-								"to": "B3_SC"
 							}
 						],
 						"after": {
