@@ -52,7 +52,8 @@
 		"PP_3.FloatingY_3",
 		"CommandBox",
 		"CommandBox.GreenButton",
-		"CommandBox.RedButton"
+		"CommandBox.RedButton",
+		"CommandBox.YellowButton"
 	],
 	"assets": [
 		{
@@ -1863,6 +1864,11 @@
 								{
 									"target": "#Detecting"
 								}
+							],
+							"Generic_Start": [
+								{
+									"target": "#Idle"
+								}
 							]
 						},
 						"type": "atomic"
@@ -2127,24 +2133,13 @@
 				0,
 				-1.5707963267949
 			],
-			"placementRelTo": "building"
-		},
-		{
-			"id": "CommandBox.GreenButton",
-			"type": "https://w3id.org/ontoeng/factory#Artifact",
-			"representations": [
-				{
-					"file": "CommandBox.glb#GreenButton",
-					"unit": 1
-				}
-			],
-			"parentObject": "CommandBox",
-			"statechart":{
-				"id": "CommandBox_GreenButton_SC",
+			"placementRelTo": "building",
+			"statechart": {
+				"id": "CommandBox_SC",
 				"context": {},
 				"states": {
-					"CommandBox_GreenButton_StartAgain": {
-						"id": "CommandBox_GreenButton_StartAgain",
+					"CommandBox_GBpushed": {
+						"id": "CommandBox_GBpushed",
 						"meta": {
 							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
 						},
@@ -2152,92 +2147,44 @@
 							{
 								"type": "ActionSendEvent",
 								"event": {
-									"type": "B1startF"
+									"type": "start_all"
 								},
-								"to": "B1_SC"
-							},
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B2startF"
-								},
-								"to": "B2_SC"
-							},
-							{
-								"type": "ActionSendEvent",
-								"event": {
-									"type": "B3startF"
-								},
-								"to": "B3_SC"
+								"to": "stSensor1"
 							}
 						],
 						"after": {
 							"5000": {
-								"target": "#CommandBox_GreenButton_idle"
+								"target": "#CommandBox_Idle"
 							}
 						},
 						"type": "atomic"
 					},
-					"CommandBox_GreenButton_idle": {
-						"id": "CommandBox_GreenButton_idle",
+					"CommandBox_Idle": {
+						"id": "CommandBox_Idle",
 						"meta": {
-							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
 						},
 						"on": {
-							"Start_All": [
+							"Push_GB": [
 								{
-									"target": "#CommandBox_GreenButton_pressed"
+									"target": "#CommandBox_GBpushed"
 								}
 							],
-							"Restart_Conveyors": [
+							"Push_RB": [
 								{
-									"target": "#CommandBox_GreenButton_StartAgain"
+									"target": "#CommandBox_RBpushed"
+								}
+							],
+							"Push_YB": [
+								{
+									"target": "#CommandBox_YBpushed"
 								}
 							]
 						},
 						"type": "atomic"
 					},
-					"CommandBox_GreenButton_pressed": {
-						"id": "CommandBox_GreenButton_pressed",
-						"meta": {
-							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
-						},
-						"entry": [
-							{
-								"type": "ActionSendEvent",
-								"to": "stSensor1",
-								"event": {
-									"type": "start_all"
-								}
-							}
-						],
-						"after": {
-							"5000": {
-								"target": "#CommandBox_GreenButton_idle"
-							}
-						},
-						"type": "atomic"
-					}
-				},
-				"initial": "CommandBox_GreenButton_idle"
-			}
-		},
-		{
-			"id": "CommandBox.RedButton",
-			"type": "https://w3id.org/ontoeng/factory#Artifact",
-			"representations": [
-				{
-					"file": "CommandBox.glb#RedButton",
-					"unit": 1
-				}
-			],
-			"parentObject": "CommandBox",
-			"statechart":{
-				"id": "CommandBox_RedButton_SC",
-				"context": {},
-				"states": {
-					"RedButton_Stop_all": {
-						"id": "RedButton_Stop_all",
+					"CommandBox_RBpushed": {
+						"id": "CommandBox_RBpushed",
 						"meta": {
 							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
 						},
@@ -2266,6 +2213,133 @@
 						],
 						"after": {
 							"5000": {
+								"target": "#CommandBox_Idle"
+							}
+						},
+						"type": "atomic"
+					},
+					"CommandBox_YBpushed": {
+						"id": "CommandBox_YBpushed",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B1startF"
+								},
+								"to": "B1_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B2startF"
+								},
+								"to": "B2_SC"
+							},
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "B3startF"
+								},
+								"to": "B3_SC"
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#CommandBox_Idle"
+							}
+						},
+						"type": "atomic"
+					}
+				},
+				"initial": "CommandBox_Idle"
+			}
+		},
+		{
+			"id": "CommandBox.GreenButton",
+			"type": "https://w3id.org/ontoeng/factory#Artifact",
+			"representations": [
+				{
+					"file": "CommandBox.glb#GreenButton",
+					"unit": 1
+				}
+			],
+			"parentObject": "CommandBox",
+			"statechart":{
+				"id": "CommandBox_GreenButton_SC",
+				"context": {},
+				"states": {
+					"CommandBox_GreenButton_idle": {
+						"id": "CommandBox_GreenButton_idle",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"on": {
+							"Press_GreenButton": [
+								{
+									"target": "#CommandBox_GreenButton_pressed"
+								}
+							]
+						},
+						"type": "atomic"
+					},
+					"CommandBox_GreenButton_pressed": {
+						"id": "CommandBox_GreenButton_pressed",
+						"meta": {
+							"type": "http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"to": "CommandBox_SC",
+								"event": {
+									"type": "Push_GB"
+								}
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#CommandBox_GreenButton_idle"
+							}
+						},
+						"type": "atomic"
+					}
+				},
+				"initial": "CommandBox_GreenButton_idle"
+			}
+		},
+		{
+			"id": "CommandBox.RedButton",
+			"type": "https://w3id.org/ontoeng/factory#Artifact",
+			"representations": [
+				{
+					"file": "CommandBox.glb#RedButton",
+					"unit": 1
+				}
+			],
+			"parentObject": "CommandBox",
+			"statechart":{
+				"id": "CommandBox_RedButton_SC",
+				"context": {},
+				"states": {
+					"RedButton_Pressed": {
+						"id": "RedButton_Pressed",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "Push_RB"
+								},
+								"to": "CommandBox_SC"
+							}
+						],
+						"after": {
+							"5000": {
 								"target": "#RedButton_idle"
 							}
 						},
@@ -2279,7 +2353,7 @@
 						"on": {
 							"Press_RedButton": [
 								{
-									"target": "#RedButton_Stop_all"
+									"target": "#RedButton_Pressed"
 								}
 							]
 						},
@@ -2289,6 +2363,59 @@
 				"initial": "RedButton_idle"
 			}
 		},
+		{
+            "id": "CommandBox.YellowButton",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "CommandBox.glb#YellowButton",
+                    "unit": 1
+                }
+            ],
+            "parentObject": "CommandBox",
+			"statechart": {
+				"id": "CommandBox_YellowButton_SC",
+				"context": {},
+				"states": {
+					"CommandBox_YellowButton_Idle": {
+						"id": "CommandBox_YellowButton_Idle",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"on": {
+							"Press_YellowButton": [
+								{
+									"target": "#CommandBox_YellowButton_Pressed"
+								}
+							]
+						},
+						"type": "atomic"
+					},
+					"CommandBox_YellowButton_Pressed": {
+						"id": "CommandBox_YellowButton_Pressed",
+						"meta": {
+							"type": "https://w3id.org/ontoeng/osph#ProductSimpleState"
+						},
+						"entry": [
+							{
+								"type": "ActionSendEvent",
+								"event": {
+									"type": "Push_YB"
+								},
+								"to": "CommandBox_SC"
+							}
+						],
+						"after": {
+							"5000": {
+								"target": "#CommandBox_YellowButton_Idle"
+							}
+						},
+						"type": "atomic"
+					}
+				},
+				"initial": "CommandBox_YellowButton_Idle"
+			}
+        },
 		{
 			"id": "ground",
 			"type": ""
