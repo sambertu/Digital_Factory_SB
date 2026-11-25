@@ -1818,7 +1818,7 @@
 									"type": "goPick"
 								},
 								"to": "PP_SC",
-								"delay": 1500
+								"delay": 1000
 							},
 							{
 								"type": "ActionSendEvent",
@@ -1826,7 +1826,7 @@
 									"type": "B1stop"
 								},
 								"to": "B1_SC",
-								"delay": 1500
+								"delay": 1000
 							}
 						],
 						"type": "atomic"
