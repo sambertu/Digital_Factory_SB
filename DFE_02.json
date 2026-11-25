@@ -1826,7 +1826,7 @@
 									"type": "B1stop"
 								},
 								"to": "B1_SC",
-								"delay": 1100
+								"delay": 1500
 							}
 						],
 						"type": "atomic"
