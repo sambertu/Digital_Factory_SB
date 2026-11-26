@@ -95,7 +95,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B1",
+								"target": "B1",
 								"velocity": [
 									0,
 									0,
@@ -120,7 +120,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B1",
+								"target": "B1",
 								"velocity": [
 									0,
 									0,
@@ -155,7 +155,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B1",
+								"target": "B1",
 								"velocity": [
 									0,
 									0,
@@ -1746,7 +1746,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B2",
+								"target": "B2",
 								"velocity": [
 									0,
 									0,
@@ -1771,7 +1771,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B2",
+								"target": "B2",
 								"velocity": [
 									0,
 									0,
@@ -1806,7 +1806,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B2",
+								"target": "B2",
 								"velocity": [
 									0,
 									0,
@@ -1889,7 +1889,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B3",
+								"target": "B3",
 								"velocity": [
 									0,
 									0,
@@ -1914,7 +1914,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B3",
+								"target": "B3",
 								"velocity": [
 									0,
 									0,
@@ -1949,7 +1949,7 @@
 						"entry": [
 							{
 								"type": "ActionSurfaceVelocity",
-								"target": "https://w3id.org/ontoeng/test_SB/#B3",
+								"target": "B3",
 								"velocity": [
 									0,
 									0,
